@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library App</title>
+</head>
+<body>
+    <div class="container">
+        <div id="add-book-form">
+            <div class="judul">
+                <h2>Aplikasi Penyimpanan Buku</h2>
+            </div>
+            <label for="title">Judul Buku:</label>
+            <input type="text" id="title" placeholder="Masukkan judul buku">
+
+            <label for="author">Penulis:</label>
+            <input type="text" id="author" placeholder="Masukkan nama penulis">
+
+            <label for="year">Tahun Terbit:</label>
+            <input type="number" id="year" placeholder="Masukkan tahun terbit">
+
+            <label for="status">Status:</label>
+            <select id="status">
+                <option value="belum-dibaca">Belum Dibaca</option>
+                <option value="selesai-dibaca">Selesai Dibaca</option>
+            </select>
+
+            <button onclick="addBook()">Tambah Buku</button>
+        </div>
+    </div>
+        <div class="container">
+        <h2>Daftar Buku</h2>
+        <div id="book-list" >
+           
+
+           
+            <div id="belum-dibaca">
+                <h3>Belum Dibaca</h3>
+                <ul id="list-belum-dibaca"></ul>
+            </div>
+
+            <div id="selesai-dibaca">
+                <h3>Selesai Dibaca</h3>
+                <ul id="list-selesai-dibaca"></ul>
+            </div>
+        
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
